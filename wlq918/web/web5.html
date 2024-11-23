@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>旅游景点</title>
+    <style type="text/css">
+        a:link{color: red; text-decoration: none; background-color: #98bf21;}
+        a:visited{color: red; text-decoration: none; background-color: #98bf21;}
+        a:hover{color: black; text-decoration: none; background-color: #98bf21;}
+        a:active{color: red; text-decoration: none; background-color: #98bf21;}
+    </style>
+    <style type="text/css">
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: white;
+        }
+        .flex{
+            display: flex;
+        }
+        .flexcolumn{
+            flex-direction: column;
+        }
+        .mgb8{
+            margin-bottom: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgl8{
+            margin-left: 8px;
+        }
+        .color{
+            background-color: #f1f1f1;
+        }
+        .font{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .thick{
+            font-weight: bold;
+        }
+        .center{
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="flex flexcolumn">
+    <div class="flex color mgb8" style="flex: 13%">
+        <div class="flex center" style="flex: 15%" >
+            <a href="..\index.html" class="font thick" style="font-size: 30px;">返回</a>
+        </div>
+        <div class="flex center" style="flex: 70%">
+            <p class="font thick" style="font-size: 35px"> 旅游景点 </p>
+        </div>
+        <div class="flex center" style="flex: 15%"></div>
+    </div>
+    <div class="flex mgb8" style="flex: 74%">
+        <div class="flex flexcolumn mgr8" style="flex: 15%">
+            <div class="flex center color mgb8" style="height: 60px">
+                <p class="font thick" style="font-size: 25px">导航栏</p>
+            </div>
+            <div class="flex center color mgb8" style="height: 60px">
+                <p class="font thick" style="color: red; font-size: 25px;">麋鹿自然保护区</p>
+            </div>
+            <div class="flex center color mgb8" style="height: 60px">
+                <p class="font thick" style="color: red; font-size: 25px;">荷兰花海</p>
+            </div>
+        </div>
+        <div class="flex flexcolumn" style="width: 1000px; height: 537px; overflow: auto;">
+            <div class="flex mgb8" style="flex: 4">
+                <div class="flex color mgr8 center" style="flex: 1">
+                    <img src="..\image\photo10.jpg" title="麋鹿自然保护区" width="450px" height="350px" />
+                </div>
+                <div class="flex color center" style="flex: 1">
+                    <img src="..\image\photo11.jpg" title="麋鹿自然保护区" width="450px" height="350px" />
+                </div>
+            </div>
+            <div class="flex color center mgb8" style="flex: 1">
+                <p class="font mgb8" style="font-size: 17px; padding: 30px;">
+                    一 : 江苏大丰麋鹿国家级自然保护区, 世界占地面积最大的麋鹿自然保护区, 国家5A级旅游景区。
+                </p>
+            </div>
+            <div class="flex mgb8" style="flex: 4">
+                <div class="flex color mgr8 center" style="flex: 1">
+                    <img src="..\image\photo12.jpg" title="荷兰花海" width="450px" height="350px" />
+                </div>
+                <div class="flex color center" style="flex: 1">
+                    <img src="..\image\photo13.jpg" title="荷兰花海" width="450px" height="350px" />
+                </div>
+            </div>
+            <div class="flex color center" style="flex: 1">
+                <p class="font" style="font-size: 17px; padding: 30px;">
+                    二 : 荷兰花海, 4A级旅游景区, 以郁金香为特色。
+                </p>
+            </div>
+        </div>
+        <div class="flex color mgl8" style="flex: 15%"></div>
+    </div>
+    <div class="flex" style="flex: 13%; font-size: 15px;">
+        <script language="JavaScript" src="..\time.js"></script>
+        <div class="flex center color" style="flex: 15%" id="clock"></div>
+        <div class="flex center color" style="flex: 70%">
+            <p>更新时间: 2024年11月24日Copyright © 2024 Lq wang</p>
+        </div>
+        <div class="flex color" style="flex: 15%"></div>
+    </div>
+</body>
+</html>
