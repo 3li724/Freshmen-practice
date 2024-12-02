@@ -1,112 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>主页</title>
-    <style type="text/css">
-        a:link{color: white; text-decoration: none; background-color: #98bf21;}
-        a:visited{color: white; text-decoration: none; background-color: #98bf21;}
-        a:hover{color: black; text-decoration: none; background-color: #98bf21;}
-        a:active{color: white; text-decoration: none; background-color: #98bf21;}
-    </style>
-    <style type="text/css">
-        body{
-            margin: 0;
-            height: 100vh;
-            background-color: white;
-        }
-        /**{
-            border: 1px solid black;
-        }*/
-        .flex{
-            display: flex;
-        }
-        .size1{
-            flex: 15%;
-        }
-        .size2{
-            flex: 85%;
-        }
-        .mg8{
-            margin: 8px;
-        }
-        .mgr8{
-            margin-right: 8px;
-        }
-        .mgb8{
-            margin-bottom: 8px;
-        }
-        .mgt8{
-            margin-top: 8px;
-        }
-        .flexcolumn{
-            flex-direction: column;
-        }
-        .color{
-            background-color: #f1f1f1;
-        }
-        .center{
-            align-items: center;
-            justify-content: center;
-        }
-        .font{
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        .thick{
-            font-weight: bold;
-        }
-        .size{
-            font-size: 30px;
-        }
-    </style>
-</head>
-<body class="flex flexcolumn">
-    <div class="flex size1">
-        <div class="flex size1 color mgr8 center">
-            <img src=".\image\photo1.jpg" title="个人图标" width="100px" height="100px"/>
-        </div>
-        <div class="flex size2 center color">
-            <p class="font thick" style="color: red; font-size: 50px;">我 的 家 乡 : 大 丰</p>
-        </div>
-    </div>
-    <div class="flex size2">
-        <div class="flex size1 mgb8 flexcolumn">
-            <div class="flex color mgt8 center" style="height: 70px">
-                <a href=".\web\web1.html" class="font size thick"> 作者介绍 </a>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>主页</title>
+        <style type="text/css">
+            a:link{color: white; text-decoration: none; background-color: #98bf21;}
+            a:visited{color: white; text-decoration: none; background-color: #98bf21;}
+            a:hover{color: black; text-decoration: none; background-color: #98bf21;}
+            a:active{color: white; text-decoration: none; background-color: #98bf21;}
+        </style>
+        <style type="text/css">
+            body{
+                margin: 0;
+                height: 100vh;
+                background-color: white;
+            }
+            /**{
+                border: 1px solid black;
+            }*/
+            .flex{
+                display: flex;
+            }
+            .size1{
+                flex: 15%;
+            }
+            .size2{
+                flex: 85%;
+            }
+            .mg8{
+                margin: 8px;
+            }
+            .mgr8{
+                margin-right: 8px;
+            }
+            .mgl8{
+                margin-left: 8px;
+            }
+            .mgb8{
+                margin-bottom: 8px;
+            }
+            .mgt8{
+                margin-top: 8px;
+            }
+            .flexcolumn{
+                flex-direction: column;
+            }
+            .color{
+                background-color: #f1f1f1;
+            }
+            .center{
+                align-items: center;
+                justify-content: center;
+            }
+            .font{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .thick{
+                font-weight: bold;
+            }
+            .size{
+                font-size: 30px;
+            }
+            #hei2{
+                height: 75vh;
+            }
+            #hei1{
+                height: 15vh;
+            }
+            #hei3{
+                height: 10vh;
+            }
+            #wid1{
+                width: 15vw;
+            }
+            #wid2{
+                width: 70vw;
+            }
+        </style>
+    </head>
+    <body class="flex flexcolumn">
+        <div class="flex" id="hei1">
+            <div class="flex color mgr8 center" id="wid1">
+                <img src=".\image\photo1.jpg" title="个人图标" width="100px" height="100px"/>
             </div>
-            <div class="flex color mgt8 center" style="height: 70px">
-                <a href=".\web\web2.html" class="font size thick">  地理位置 </a>
-            </div>
-            <div class="flex color mgt8 center" style="height: 70px">
-                <a href=".\web\web3.html" class="font size thick">  红色印记 </a>
-            </div>
-            <div class="flex color mgt8 center" style="height: 70px">
-                <a href=".\web\web4.html" class="font size thick">  历史名人 </a>
-            </div>
-            <div class="flex color mgt8 center" style="height: 70px">
-                <a href=".\web\web5.html" class="font size thick">  旅游景点 </a>
-            </div>
-            <div class="flex color mgt8 center" style="height: 70px">
-                <a href="#" class="font size thick"> 寝室主页 </a>
+            <div class="flex center color" style="width: 85vw">
+                <p class="font thick" style="color: red; font-size: 50px;">我 的 家 乡 : 大 丰</p>
             </div>
         </div>
-        <div class="flex size2">
-            <div class="flex size2 color mg8 flexcolumn" style="overflow: auto; align-items: center; height: 537px;">
-                <img src=".\image\photo2.jpg" title="图片" width="850px" height="500px" class="mgb8 mgt8"/>
-                <img src=".\image\photo14.jpg" title="图片" width="850px" height="500px" class="mgb8 mgt8" />
-                <img src=".\image\photo15.jpg" title="图片" width="850px" height="500px" class="mgb8 mgt8"/>
-                <img src=".\image\photo16.jpg" title="图片" width="850px" height="500px" class="mgn8 mgt8"/>
+        <div class="flex">
+            <div class="flex mgb8 flexcolumn" style="width: 15vw">
+                <div class="flex color mgt8 center" style="height: 70px">
+                    <a href=".\web\web1.html" class="font size thick"> 作者介绍 </a>
+                </div>
+                <div class="flex color mgt8 center" style="height: 70px">
+                    <a href=".\web\web2.html" class="font size thick">  地理位置 </a>
+                </div>
+                <div class="flex color mgt8 center" style="height: 70px">
+                    <a href=".\web\web3.html" class="font size thick">  红色印记 </a>
+                </div>
+                <div class="flex color mgt8 center" style="height: 70px">
+                    <a href=".\web\web4.html" class="font size thick">  历史名人 </a>
+                </div>
+                <div class="flex color mgt8 center" style="height: 70px">
+                    <a href=".\web\web5.html" class="font size thick">  旅游景点 </a>
+                </div>
+                <div class="flex color mgt8 center" style="height: 70px">
+                    <a href="#" class="font size thick"> 寝室主页 </a>
+                </div>
             </div>
-            <div class="flex size1 color mgt8 mgb8"></div>
+            <div class="flex flexcolumn mgl8"  id="hei2" style="overflow: auto; width: 70vw">
+                <div class="flex color mgb8 mgt8 center" style="flex: 1">
+                    <img src=".\image\photo2.jpg" title="图片" width="850px" height="500px" class="mgb8 mgt8"/>
+                </div>
+                <div class="flex color mgb8 center" style="flex: 1">
+                    <img src=".\image\photo14.jpg" title="图片" width="850px" height="500px" class="mgb8 mgt8" />
+                </div>
+                <div class="flex color mgb8 center" style="flex: 1">
+                    <img src=".\image\photo15.jpg" title=   "图片" width="850px" height="500px" class="mgb8 mgt8"/>
+                </div>
+                <div class="flex color mgb8 center" style="flex: 1">
+                    <img src=".\image\photo16.jpg" title="图片" width="850px" height="500px" class="mgn8 mgt8"/>
+                </div>
+            </div>
+            <div class="flex size1 color mgt8 mgb8" style="width: 15vw"></div>
         </div>
-    </div>
-    <div class="flex" style="height: 55px">
-        <script language="JavaScript" src=".\time.js"></script>
-        <div class="flex size1 mgr8 color center" id="clock"></div>
-        <div class="flex size2 color center" style="font-size: 14px">
-            <p>更新时间: 2024年11月24日Copyright © 2024 Lq wang</p>
+        <div class="flex" id="hei3">
+            <script language="JavaScript" src=".\time.js"></script>
+            <div class="flex size1 mgr8 color center" id="clock"></div>
+            <div class="flex size2 color center" style="font-size: 14px">
+                <p>更新时间: 2024年12月2日Copyright © 2024 Lq wang</p>
+            </div>
         </div>
-    </div>
-</body>
-</html>
+    </body>
+    </html>
